@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <p id="greeting">Good morning!</p>
+  <p id="shad"></p>
+    <header>
+     <h1>FEDERAL UNIVERSITY OF HEALTH SCIENCES, ILA ORANGUN</h1>
+     <h2>Student Result Checker</h2>
+    </header>
+
+    <main>
+        <!-- FIRST BOX: ENTER SCORES -->
+        <section class="input-box">
+          <h2>Enter Student Details</h2>
+          <div class="student-details"> <input type="text" id="fullName" placeholder="Full name">
+             <select id="studentClass">
+                 <option value="JSS1">JSS1</option>
+                 <option value="JSS2">JSS2</option>
+                 <option value="JSS3">JSS3</option>
+                 <option value="SS1">SS1</option>
+                 <option value="SS2">SS2</option>
+                 <option value="SS3">SS3</option>
+              </select>
+          </div>
+
+          <div class="table-container">
+             <table> <thead> <tr>
+                 <th>Subject</th>
+                 <th>Test 1<br>/20</th>
+                 <th>Test 2<br>/20</th>
+                 <th>Exam<br>/60</th>
+                 <th>Total</th> </tr> </thead>
+                 <tbody id="scoreRows">
+                        <!-- The eight rows will show here -->
+                    </tbody>
+             </table>
+          </div>
+
+          <div class="remarks">
+             <label>
+               Principal's Remark <input type="text" id="principalRemark" placeholder="Enter remark">
+             </label>
+
+             <label>
+               Class Teacher's Remark <input type="text" id="teacherRemark" placeholder="Enter remark">
+             </label>
+          </div>
+
+          <button type="button" id="resetBtn">Clear All</button>
+        </section>
+        <!-- SECOND BOX: RESULT -->
+        <section class="result-box">
+            <h2>Student Result</h2>
+            <div class="result-details">
+             <p> <strong>Full name:</strong> <span id="resultName"></span></p>
+             <p> <strong>Class:</strong> <span id="resultClass">JSS2</span></p>
+            </div>
+
+            <div class="table-container">
+             <table><thead>
+             <tr>
+               <th>Subject</th>
+               <th>Total</th>
+               <th>Grade</th>
+               <th>Remark</th>
+             </tr></thead>
+
+             <tbody id="resultRows">
+                        <!-- The eight result rows will appear here -->
+             </tbody>
+             </table>
+            </div>
+
+            <div class="average">
+             <p><strong>Number of subjects:</strong><span id="subjectsCount">0</span></p>
+             <p><strong>Average:</strong><span id="averageScore">—</span></p>
+            </div>
+
+            <div class="final-remarks">
+                <p><strong>Principal:</strong><span id="resultPrincipalRemark">—</span></p>
+                <p><strong>Class Teacher:</strong><span id="resultTeacherRemark">—</span></p>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

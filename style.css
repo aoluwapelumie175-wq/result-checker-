@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f0fa;
+    color: #222;
+}
+
+#greeting {
+    color: #4836a5;
+    font-weight: bold;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    display: inline-block;
+    background-color: #4836a5;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 22px;
+    color: #29245e;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #5744b5;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.input-box,
+.result-box {
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 0;
+}
+
+.input-box {
+    background-color: #5140b5;
+    color: white;
+}
+
+.result-box {
+    background-color: white;
+    border: 2px solid #d9d3f5;
+}
+
+.input-box h2,
+.result-box h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.result-box h2 {
+    color: #5140b5;
+}
+
+.student-details {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 13px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #b8adff;
+    border-color: #7b6ae0;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: #222;
+}
+
+th {
+    background-color: #ddd8f7;
+    color: #30266e;
+}
+
+th,
+td {
+    border: 1px solid #c9c5dc;
+    padding: 8px 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.input-box th {
+    background-color: #342780;
+    color: white;
+}
+
+.score-input {
+    width: 55px;
+    padding: 7px 3px;
+    text-align: center;
+}
+
+.subject-input {
+    width: 125px;
+    padding: 7px 3px;
+}
+
+.total-output {
+    display: inline-block;
+    min-width: 20px;
+    font-weight: bold;
+    color: #4936a5;
+}
+
+.remarks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.remarks label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.remarks input {
+    margin-top: 7px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: #4936a5;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e5e0ff;
+}
+
+.result-details {
+    margin: 15px 0;
+}
+
+.result-details p,
+.average p,
+.final-remarks p {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.result-details span {
+    overflow-wrap: anywhere;
+}
+
+.grade-a,
+.grade-b {
+    color: green;
+    font-weight: bold;
+}
+
+.grade-c {
+    color: #1764b0;
+    font-weight: bold;
+}
+
+.grade-d {
+    color: #b26b00;
+    font-weight: bold;
+}
+
+.grade-f {
+    color: red;
+    font-weight: bold;
+}
+
+.average {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #efedfc;
+    border-radius: 7px;
+}
+
+.final-remarks {
+    margin-top: 15px;
+}
+
+.final-remarks span {
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #665b9e;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 17px;
+    }
+
+    .input-box,
+    .result-box {
+        padding: 12px;
+    }
+
+    .student-details {
+        grid-template-columns: 1fr;
+    }
+
+    .remarks {
+        grid-template-columns: 1fr;
+    }
+}
+
+#shad{
+    color: #4836a5;
+    font-weight: bold;
+    margin-left: 1100px;
+    margin-top: -30px;
+}
